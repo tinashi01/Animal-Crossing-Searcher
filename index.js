@@ -17,7 +17,7 @@ const villagersList = document.getElementById('villagersList');
 const fetchVillagers = () => {
     const villagers = [];
     for (let i=1; i < 50; i++) {
-        const url = `http://acnhapi.com/v1/villagers/${i}`
+        const url = `https://acnhapi.com/v1/villagers/${i}`
         villagers.push(fetch(url).then((res) => res.json()))
     }
     Promise.all(villagers).then((results) => {
