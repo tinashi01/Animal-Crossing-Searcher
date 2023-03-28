@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project 1</title>
-    <script defer src="index.js"></script>
-</head>
-<body>
-    <h2>Currency code to name converter</h2>
-    <div class="converter">
-        <h3>Converter</h3>
-        
-        <div class="field">
-            <h4>Find the name for the currency code!</h4>
-            <label for="code">Enter currency code:</label> 
-            <input type="text" name="code" id="code" placeholder="e.g. AUD">
-            <input type="submit" class="btn" value="Search">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Project 1</title>
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <div class = 'container'>
+            <h2>Animal Crossing New Horizons: Villagers</h2>
+            <div id="searcher">
+                <label for="search">Search Villagers:</label>
+                <input type="search" id="search" name="search" placeholder="search for Villager">
+            </div>
+            <h3>Villagers</h3>
+            
+            <div class="villagers">
+                <ul id="villagersList"></ul>
+            </div>
         </div>
-
-        
-    </div>
-    <div class="searches">
-    <h3>Recent Searches</h3>
-
-    <ul id="recentSearches">
-
-    </ul>
-    </div>
-</body>
+    </body>
 </html>

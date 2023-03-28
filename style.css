@@ -3,19 +3,10 @@
 body {
     font-family: "Raleway";
     text-align:center;
-    
+    background-image: url('images/acnh.png');
+
 }
 
-div.converter{
-    background-color: lightgray;
-    max-width: 500px;
-    margin: auto; 
-    border-radius:10px;
-}
-
-div.searches {
-    background-color: lightgray;
-    max-width: 500px;
-    margin: auto;
-    border-radius:10px;
+li {
+    list-style-type: none;
 }
