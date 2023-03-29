@@ -10,8 +10,7 @@ body {
 li {
     list-style-type: none;
     float: left;
-    width: 21%;
-    padding: 2%
+    width: 20%;
 }
 
 .dark {

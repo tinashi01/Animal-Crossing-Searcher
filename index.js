@@ -24,8 +24,7 @@ function initialize() {
     let x = document.getElementsByClassName('name');
     let y = document.getElementsByClassName('villager');
     function searchVillagers() {
-        let input = document.getElementById('search').value
-        input.toLowerCase();
+        let input = document.getElementById('search').value.toLowerCase();
 
         for (i = 0; i < x.length; i++) {
             if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -36,7 +35,7 @@ function initialize() {
             }
         }
     }
-    
+
     let ul = document.querySelector("#villagersList")
     document.getElementById("search").addEventListener("keyup", searchVillagers);
 
@@ -46,9 +45,8 @@ function initialize() {
     })
 
     
-
+    let dark = document.querySelector('#dark');
     dark.addEventListener('change', ()=> {
-        let dark = document.querySelector('#dark');
         document.body.classList.toggle('dark');
     });
 
