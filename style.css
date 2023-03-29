@@ -9,4 +9,6 @@ body {
 
 li {
     list-style-type: none;
+    float: left;
+    width: 20%;
 }
