@@ -36,15 +36,21 @@ function initialize() {
             }
         }
     }
+    
     let ul = document.querySelector("#villagersList")
     document.getElementById("search").addEventListener("keyup", searchVillagers);
 
-    ul.addEventListener("click", (e) => {
+    ul.addEventListener("dblclick", (e) => {
         let event = e.target.closest("LI")
-        event.style.backgroundColor = "yellow"
+        event.style.backgroundColor = "pink"
     })
 
     
+
+    dark.addEventListener('change', ()=> {
+        let dark = document.querySelector('#dark');
+        document.body.classList.toggle('dark');
+    });
 
 
 }

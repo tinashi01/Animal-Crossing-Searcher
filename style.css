@@ -13,3 +13,8 @@ li {
     width: 21%;
     padding: 2%
 }
+
+.dark {
+    color: white;
+    background: #444;
+  }
