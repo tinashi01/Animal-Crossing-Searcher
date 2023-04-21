@@ -21,21 +21,29 @@ function initialize() {
         .then(data => populateVillagers(data))
         .catch(err => console.log(err))
 
-    let x = document.getElementsByClassName('name');
-    let y = document.getElementsByClassName('villager');
+    let name = document.getElementsByClassName('name');
+    let village = document.getElementsByClassName('villager');
+    let none = document.getElementById('none');
+
     function searchVillagers() {
         let input = document.getElementById('search').value.toLowerCase();
+        let itemsFound = false;
 
-        for (i = 0; i < x.length; i++) {
-            if (!x[i].innerHTML.toLowerCase().includes(input)) {
-                y[i].style.display="none";
+        for (i = 0; i < name.length; i++) {
+            if (!name[i].innerHTML.toLowerCase().includes(input)) {
+                village[i].style.display="none";  
             }
-            else {
-                y[i].style.display="list-item";
+            else if (name[i].innerHTML.toLowerCase().includes(input)) {
+                village[i].style.display="list-item";
+                itemsFound = true;
             }
         }
+        
+        none.style.display = itemsFound ? "none" : "block" ;
+
     }
 
+    
     let ul = document.querySelector("#villagersList")
     document.getElementById("search").addEventListener("keyup", searchVillagers);
 
