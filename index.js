@@ -16,7 +16,7 @@ function initialize() {
             .join('');
     }
 
-    fetch('https://acnhapi.com/v1/villagers/')
+    fetch('https://acnhapi.com/v1a/villagers/')
         .then(res => res.json())
         .then(data => populateVillagers(data))
         .catch(err => console.log(err))
